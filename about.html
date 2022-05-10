@@ -1,0 +1,91 @@
+<!Doctype html>
+<html>
+<head>
+      <title>E-Commerce| About us</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+     <nav class="nav nav_top">
+         <div class="logo">
+         <a href="project.html"><img src="images/amazon.jpg" width="100"></a>
+         </div>
+         <div class="nav_side">
+             <a href="about.html">About us</a>
+             <a href="service.html">Service</a>
+             <a href="blog.html">Blogs</a>
+             <a href="contact.html">Contact</a>
+             <a href="loginorsignup.html">Login/Signup</a>
+         </div>
+    </nav>
+<div class="about_us">
+      <h2>About Us</h2>
+      <div class="about_content">
+            <p>A well-built infographic might help visitors remember about you or your business better than any amount of words. So if you think it works better for your brand or business, skip the lengthy description, or add a well-designed graphic that can help your visitors understand your concept. Or maybe you would like to add a cool video about how your business was created, or about your story and let it speak for itself.</p>
+      </div>
+      <hr>
+      <h2>Our Mission</h2>
+      <p>
+A mission statement is used by a company to explain, in simple and concise terms, its purpose(s) for being. The mission statement is usually one sentence or a short paragraph, explaining its culture, values, and ethics.</p>
+</div>
+<div class='feed'>
+    <h2>Write a review</h2>
+    <div class="feed_form">
+        <form name="submit-googlesheet" method="Post">
+            <input type="text" name="Name"  placeholder="Name"><br>
+            <input type="email" name="Email"  placeholder="Email-Id"><br>
+            <input type="number"name="Number"  placeholder="Contact number"><br>
+            <textarea rows="5" cols="7" name="Review"placeholder="Write your review"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+<footer>
+    <div class="footer_logo">
+         <a href="project.html"><img src="images/amazon.jpg" width="100"></a>
+    </div>
+    <div class="pages">
+        <h3>Pages</h3>
+        <a href="service.html">Service</a>|
+        <a href="contact.html">Contact  us</a>|
+        <a href="blogs.html">Blogs</a>|
+        <a href="loginorsignup.html">Login/Signup</a>|
+       </div>
+    <div class="doc">
+        <h3>Documents</h3>
+        <a href="">Privacy Policy</a>|
+        <a href="">Terms of use</a>|
+        <a href="">Refund Policy</a>|
+    </div>
+    <div class="social">
+        <h3>Follow us</h3>
+        <a href="https://www.facebook.com/Amazon/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
+        <a href="https://twitter.com/amazonin?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/company/amazon/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/amazon/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </div>
+    <div class="contact">
+        <h3>Contact Us</h3>
+        <a href="https://api.Whatsapp.com/send?phone=+919876543210" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="tel: +919876543210"><i class="fa fa-phone" aria-hidden="true"></i></a>
+        <a href="mailto: support@amazon.ai"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    </div>
+    <hr>
+    <p>Copyright &copy; 2021 amazon. All rights reserved</p>
+
+
+</footer>
+<script type="text/javascript">
+ const scriptURL ="https://script.google.com/macros/s/AKfycbxBAP7APDKEbrjxJKAwkohgowWTZt-f6w0fxVMgmCwXHpbh9Zg4cYpjpLz17OYs_ITPww/exec"
+            const form = document.forms['submit-googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+</script>
+</body>
+</html>
